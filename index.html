@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PWRS.PICS Portfolio</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #2b0033);
+      background: linear-gradient(135deg, #3a0ca3, #7209b7, #4361ee, #4cc9f0);
+      background-size: 400% 400%;
+      animation: gradientShift 10s ease infinite;
       color: white;
       display: flex;
       flex-direction: column;
@@ -22,56 +24,63 @@
       min-height: 100vh;
     }
 
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     .container {
       max-width: 700px;
       width: 90%;
       margin-top: 80px;
+      padding: 20px;
     }
 
     h1 {
+      font-family: "Great Vibes", cursive;
       font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: #00ffd5;
-      letter-spacing: 2px;
-      text-shadow: 0 0 10px rgba(0,255,200,0.6);
+      margin-bottom: 5px;
+      color: #ffffff;
+      letter-spacing: 1px;
+      text-shadow: 0 0 18px rgba(255,255,255,0.8);
     }
 
     h2 {
+      font-size: 1rem;
       font-weight: 300;
-      color: #ffffffcc;
-      margin-bottom: 30px;
+      color: #ffffffdd;
+      margin-bottom: 25px;
     }
 
     .links {
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      margin-top: 30px;
+      gap: 15px;
+      margin-top: 20px;
     }
 
     .link-btn {
-      padding: 15px 20px;
-      border-radius: 12px;
-      font-size: 1.2rem;
-      font-weight: 500;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-size: 1rem;
       text-decoration: none;
       color: white;
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,0.2);
-      transition: 0.3s;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      transition: 0.3s ease;
     }
 
     .link-btn:hover {
       transform: scale(1.05);
-      background: rgba(255,255,255,0.2);
+      background: rgba(255, 255, 255, 0.3);
     }
 
     footer {
-      margin-top: 50px;
-      opacity: 0.6;
-      font-size: 0.8rem;
+      margin-top: 40px;
+      opacity: 0.7;
+      font-size: 0.7rem;
     }
   </style>
 </head>
@@ -82,19 +91,15 @@
     <h2>Photography by Gregory Powers</h2>
 
     <div class="links">
-      <!-- Replace this link with your actual Adobe Portfolio link -->
       <a class="link-btn" href="https://pwrs.pics" target="_blank">PWRS.PICS Portfolio</a>
-
-      <!-- Replace this with your real Threads link -->
+      <a class="link-btn" href="https://www.instagram.com/pwrspics" target="_blank">Instagram</a>
       <a class="link-btn" href="https://www.threads.net" target="_blank">Threads</a>
-
-      <!-- GitHub link -->
       <a class="link-btn" href="https://github.com/pwrspics" target="_blank">GitHub</a>
     </div>
   </div>
 
   <footer>
-    © 2025 PWRS.PICS — Built with ❤️ and GitHub Pages
+    © 2025 PWRS.PICS — All Rights Reserved
   </footer>
 </body>
 </html>
